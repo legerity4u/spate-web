@@ -1,2 +1,2 @@
 FROM nginx
-COPY spate-web /usr/share/nginx/html
+COPY . /usr/share/nginx/html
