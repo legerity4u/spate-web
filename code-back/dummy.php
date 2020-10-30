@@ -1,0 +1,1 @@
+<?php echo 'Spate is comming soon'; ?>
