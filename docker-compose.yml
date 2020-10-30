@@ -9,7 +9,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./docker/nginx-front.conf:/etc/nginx/conf.d
+      - ./data/front:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt #for the validation challenges
       - ./data/certbot/www:/var/www/certbot #for the actual certificates
       - ./code-front:/code
@@ -23,7 +23,7 @@ services:
       - "8888:80"
       - "8443:443"
     volumes:
-      - ./data/nginx:/etc/nginx/conf.d
+      - ./data/back:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt #for the validation challenges
       - ./data/certbot/www:/var/www/certbot #for the actual certificates
       - ./code-back:/code
